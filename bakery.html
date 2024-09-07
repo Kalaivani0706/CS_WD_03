@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery landing page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+            color: #333;
+            text-align: center;
+            position: relative;
+            height: 100%;
+            background-image: url("./backimg2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .poster-container {
+            width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fdf3e3;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .poster-header {
+            background-color: #f8b400;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .poster-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .navbar{
+            padding:20px;
+            width: 100%;
+        }
+
+        .poster-content {
+            margin-top: 20px;
+        }
+
+        .poster-content img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .poster-content .details {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            flex-wrap: wrap;
+        }
+
+        .poster-content .details .info {
+            background-image: #ffe4b5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .poster-content.info h3{
+            margin-top: 0;
+        }
+      
+        .poster-container2{
+            position: center;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            margin: 0 15px;
+            
+        }
+        nav ul li a{
+            color:#333;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            font-size: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .poster-content .details .info {
+                width: 80%;
+            }
+        }
+        .navbar .search-container {
+                margin: 8px 0;
+            }
+       
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        } 
+        .poster-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fdf3e3;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+         }
+    .poster-container2{
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fdf3e3;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: right;
+         }
+    .poster-container3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fdf3e3;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+        }
+    .image-container {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+        }
+
+    .image-container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+        }
+
+    .details {
+    width: 95%;
+        }
+
+    .info {
+    position: right;
+    background-color: #ffe4b5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+     }
+
+    .poster-container1-info ,
+    .poster-container2-info,
+    .poster-container3-info{
+    text-align: right;
+    font-size: 30px;
+    width: 100%;
+    }
+    .poster-container2-info h3,
+    .poster-container3-info h3{
+    margin-top: 0;
+    }
+
+    .poster-container1-info p,
+    .poster-container2-info p ,
+    .poster-container3-info p{
+    margin: 5px 0;
+    }
+    .poster-container1-info img,
+    .poster-container2-info img,
+    .poster-container3-info img{
+    width:10px;
+    height: 10px;
+    }
+    </style>
+</head>
+<body>
+<div class="poster-container">
+    <div class="poster-header">
+        <h1>------  AMAZING BITES(Shake & bake)  -----</h1>
+        <marquee dir="blink"><h1 algin="center">welcome to My bakery!!!!</h1></marquee>
+        <p>Join us for a delightful bakery experience....</p>
+    </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Varities">Menu Bar</a></li>
+                <li><a href="#Customer">Customer</a></li>
+                </ul>
+            </nav>
+            
+         </div>
+    </div>
+   
+    <div class="poster-content">
+        <h2>Varieties We Offer</h2>
+        <img src="bread.jpg" alt="Fresh Bread" >
+        <img src="cake2.jpg" alt="Delicious Cupcakes">
+        <img src="cake.jpg" alt="Tasty Pastries">
+    </div>
+    <section id="Contact">
+        <div class="poster-container1">
+            <img src="call2.jpg" alt="Call Me" class="callme">
+            <div class="details">
+                <div class="info">
+                    <div class="poster-container1-info">
+                        <h3>Contact Details</h3>
+                        <p><strong>Phone:</strong> 9456789976</p>
+                        <p><strong>Email:</strong> kvani0706@gmail.com</p>
+                        <p><strong>Address:</strong> 123 Bakery Lane, Sweet City</p>
+                    </div>
+                </div>   
+            </div>
+        </div> 
+    </section>
+  
+      <section id="Varities">
+        <div class="poster-container2">
+            <img src="menu2.jpg" alt="menu bar" class="bread" align="center">
+            <div class="details">
+            <div class="info">
+            <div  class="poster-container2-info">
+                <h3>Menu</h3>
+                <p><strong>Bread:</strong> 12.50INR</p>
+                <p><strong>Cupcakes:</strong>10.50INR each</p>
+                <p><strong>Pastries:</strong>30.00INR</p>
+                <p><strong>Coffee:</strong> 15.00INR</p>
+                <p><strong>Cookies:</strong>0.75INR each and more...</p>
+            </div>
+                
+            </div>
+    
+           </div>
+        </div>
+      </section>
+       
+     <section id="Customer">
+        <div class="poster-container3">
+            <img src="customer.jpg" alt="our respected customer"class="bread" align="right">
+            <div class="poster-container3-info">
+                <div class="details">
+                    <div class="info">
+                        <h3>Customer Details</h3>
+                        
+                        <p><strong>Name:</strong> Jane Doe</p>
+                        <p><strong>Last Visit:</strong> August 28, 2024</p>
+                        <p><strong>Favorite Item:</strong> Chocolate Croissant and etc.....</p>
+                    </div>
+                    </div>
+            </div>
+            
+        </div>
+        
+     </section>
+       
+       
+       
+
+        
+    
+    </div>
+    <div>
+        <footer>
+            <p>&copy; 2024 Bakery Delights</p>
+        </footer>
+    </div>    
+   
+
+
+</body>
+</html>
